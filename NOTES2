@@ -26,22 +26,9 @@ def batch_badge_creator(persons)
   end
 end
 
-def assign_rooms(arr)
-  new_array = []
-  counter = 1
-  arr.each do |name|
-  new_array.push("Hello, #{name}! You'll be assigned to room #{counter}!")
-  counter+=1
-  end
-  return new_array  
-end
-
-def printer(persons)
-  batch_badge_creator(persons).each do |badge|
-    puts badge
-  end
-
-  assign_rooms(persons).each do |assignment|
-    puts assignment
-  end
+def assign_rooms(persons)
+  #   persons.each_with_index { |item, index|
+  #   persons[item] = index
+  # }
+  # end
 end
